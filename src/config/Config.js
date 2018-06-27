@@ -1,15 +1,3 @@
-// Hubli Api's
-export const BASE_URL = 'https://hubli.lit-transit.com/tms/rest/api/v1/siri/';
-export const  AUTHORIZATION = 'Authorization';
-export const  APIKEY = 'ApiKey bf26959f0b704b1cafb7e0b42e1ae0ec';
-
-//Login Api's
-export const BASE_URL_POST = 'http://117.232.88.26:8127/';
-export const CONTENT_TYPE = "Content-Type";
-export const CONTENT_TYPE_KEY="application/x-www-form-urlencoded";
-export const  APIKEY_POST = 'null';
-
-
 
 // Actions type
 export const EMAIL_CHANGE ="email_change";
