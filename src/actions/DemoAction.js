@@ -3,7 +3,7 @@ import {
     FETCHING_DATA, ORIGIN_REF
 } from "../config/Config";
 
-import ApiAccess from "../apiAccess/ApiAccess";
+// import ApiAccess from "../apiAccess/ApiAccess";
 import {makeList} from "../business/LoginBusiness";
 
 export const emailChanged = (text) => {
@@ -33,7 +33,8 @@ export const sampleApiCallWigh_Params = ({email, password}) => {
                 Password: 'bipros123#',
                 grant_type: 'password'
             };
-            let resp = await ApiAccess.post("token",params);
+            // let resp = await ApiAccess.post("token",params);
+            let resp = ""
             console.log("Login resp " + resp);
             /* dispatch({
                  type: ORIGIN_REF,
@@ -52,7 +53,8 @@ export const sampleApiCall = ({}) => {
     return async (dispatch) => {
         dispatch({type: FETCHING_DATA});
         try {
-            let data = await ApiAccess.getWith_Headers("sm"); //get('sm');//
+            // let data = await ApiAccess.getWith_Headers("sm"); //get('sm');//
+            let data = ""
             // console.log(" Response " + " " + data);
             dispatch({
                 type: ORIGIN_REF,
