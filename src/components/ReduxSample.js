@@ -30,6 +30,7 @@ class ReduxSample extends Component {
 
     renderAlbums() {
         this.props.monitoredStopVisit({});
+        console.log("hi")
         this.props.monitordData.map(monitorDataList => monitorDataList.MonitoredStopVisit.map(monitorList =>
             <Text>{monitorList.RecordedAtTime}</Text>));
 
